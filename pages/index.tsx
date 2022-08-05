@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 import Layout from '@components/Layout'
-//import KawaiHeader from '../components/KawaiHeader'
+import KawaiiHeader from '@components/KawaiiHeader'
 import ProductList from '@components/ProductList'
 
 const HomePage = () => {
@@ -17,6 +17,7 @@ const HomePage = () => {
 
   return (
     <Layout>
+      <KawaiiHeader />
       <ProductList products={productList} />
     </Layout>
   )
