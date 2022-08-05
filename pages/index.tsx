@@ -1,7 +1,9 @@
 import { useEffect, useState } from 'react'
-import Navbar from '../components/Navbar'
+import Layout from '@components/Layout'
+//import KawaiHeader from '../components/KawaiHeader'
+import ProductList from '@components/ProductList'
 
-const Home = () => {
+const HomePage = () => {
   const [productList, setProductList] = useState<TProduct[]>([])
 
   useEffect(() => {
@@ -14,15 +16,10 @@ const Home = () => {
   }, [])
 
   return (
-    <div>
-      {' '}
-      <Navbar />
-      <h1>Hello Richi</h1>
-      {productList.map((product) => (
-        <div>{product.name}</div>
-      ))}
-    </div>
+    <Layout>
+      <ProductList products={productList} />
+    </Layout>
   )
 }
 
-export default Home
+export default HomePage

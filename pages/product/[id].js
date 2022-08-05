@@ -6,6 +6,17 @@ const ProductItem = () => {
     query: { id },
   } = useRouter()
 
+  useEffect(() => {
+    window.fetch('/api/avo', {
+      method: 'GET',
+      body: JSON.stringify(id),
+    }).then
+
+    return () => {
+      second
+    }
+  }, [third])
+
   return <div>ProductItem: {id}</div>
 }
 
