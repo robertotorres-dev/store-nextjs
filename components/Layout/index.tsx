@@ -2,6 +2,7 @@ import React from 'react'
 import { Container } from 'semantic-ui-react'
 
 import Navbar from '@components/Navbar'
+import Footer from '@components/Footer'
 
 type LayoutProps = { children?: React.ReactNode }
 
@@ -11,6 +12,7 @@ const Layout = ({ children }: LayoutProps) => (
     <Container as="main" text>
       {children}
     </Container>
+    <Footer />
   </>
 )
 
