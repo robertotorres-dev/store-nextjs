@@ -112,7 +112,7 @@ export const useCartMutations = () => {
 
   const removeFromCart = (product: TProduct) =>
     dispatch({
-      type: 'add',
+      type: 'remove',
       item: product,
     })
 

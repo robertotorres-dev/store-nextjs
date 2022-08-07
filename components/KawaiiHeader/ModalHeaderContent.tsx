@@ -21,10 +21,10 @@ const ModalHeaderContent = () => {
           </Grid.Column>
         </Grid.Row>
       </Grid>
-      <style>{`
-      .container {
-        padding: 2rem;
-      }
+      <style jsx>{`
+        .container {
+          padding: 2rem;
+        }
       `}</style>
     </div>
   )

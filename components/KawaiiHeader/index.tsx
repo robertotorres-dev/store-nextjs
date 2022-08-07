@@ -46,16 +46,16 @@ const KawaiiHeader = () => {
         closeOnDimmerClick={false}
       />
 
-      <style>
+      <style jsx>
         {`
-        .container {
-          margin: 2rem 0 3rem
-        }
-        .container :globa(.header) {
-          display: flex;
-          align-items: center;
-          justify-content: center;
-        }
+          .container {
+            margin: 2rem 0 3rem;
+          }
+          .container :globa(.header) {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
         `}
       </style>
     </div>

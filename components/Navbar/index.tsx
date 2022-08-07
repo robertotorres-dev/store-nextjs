@@ -30,10 +30,10 @@ const Navbar = () => {
           </Menu.Item>
         </Link>
       </Container>
-      <style>{`
-      .ui.menu.huge {
-        font-size: 1.5rem;
-      }
+      <style jsx global>{`
+        .ui.menu.huge {
+          font-size: 1.5rem;
+        }
       `}</style>
     </Menu>
   )

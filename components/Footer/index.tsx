@@ -20,6 +20,16 @@ const Footer = () => (
             <List>
               <List.Item>
                 <Link href="/about">
+                  <a>Conoce más</a>
+                </Link>
+              </List.Item>
+            </List>
+          </Grid.Column>
+          <Grid.Column width={5}>
+            <Header as="h4" content="Servicios" />
+            <List>
+              <List.Item>
+                <Link href="/">
                   <a>Todos los productos</a>
                 </Link>
               </List.Item>
@@ -83,7 +93,7 @@ const Footer = () => (
         </p>
       </div>
     </Container>
-    <style>{`
+    <style jsx>{`
       .colophon {
         text-align: center;
         margin-top: 3.2rem;

@@ -28,7 +28,8 @@ const ShoppingCartIcon = ({ cartCount, name }: ShoppingCartIconProps) => {
         {`${name}`}
         {showCartCount()}
       </div>
-      <style>{`.container {
+      <style jsx>{`
+        .container {
           display: flex;
           align-items: center;
         }
@@ -37,7 +38,8 @@ const ShoppingCartIcon = ({ cartCount, name }: ShoppingCartIconProps) => {
         }
         .text span {
           font-size: smaller;
-        }`}</style>
+        }
+      `}</style>
     </div>
   )
 }
